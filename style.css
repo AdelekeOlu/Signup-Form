@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Quicksand, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin-top: 5rem;
+  background-image: url(/images/bg-intro-desktop.png);
+  background-color: #f72c5b;
+}
+.container {
+  display: flex;
+  width: 80%;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 0px 50px;
+  color: white;
+}
+h1 {
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+.form-container {
+  display: block;
+}
+.form-header {
+  /* display: flex; */
+  width: 100%;
+  padding: 10px 60px;
+  background: blueviolet;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: small;
+  text-align: center;
+}
+span {
+  font-size: small;
+  font-weight: 100;
+}
+.form-container2 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-top: 5rem;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  background: #16c47f;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-container2 p {
+  font-weight: 800;
+  font-size: xx-small;
+  padding: 0px 30px;
+  color: grey;
+}
+a {
+  text-decoration: none;
+  color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.6em;
+  margin-top: 5px;
+  display: flex;
+  justify-self: right;
+}
+
+.input-error {
+  border: 1px solid red;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="red"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-11.293a1 1 0 00-1.414 0L8 8.586 6.707 7.293a1 1 0 00-1.414 1.414L6.586 10l-1.293 1.293a1 1 0 001.414 1.414L8 11.414l1.293 1.293a1 1 0 001.414-1.414L9.414 10l1.293-1.293a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px 20px;
+}
+
+/* for smartphones */
+@media (max-width: 670px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+    margin-top: 30vh;
+  }
+
+  h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+  p {
+    font-size: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+}
